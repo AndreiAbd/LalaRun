@@ -10,6 +10,8 @@ let
 
 //Reload
 function reload() {
+    document.getElementById('00_ogg').pause();
+    document.getElementById('01_ogg').play();
     location.reload();
 }
 
@@ -18,6 +20,7 @@ document.getElementById("addCurrentYear").innerHTML = d.getFullYear();
 
 /* View in fullscreen */
 function openFullscreen() {
+    document.getElementById('01_ogg').play();
     if (elem.requestFullscreen) {
         elem.requestFullscreen();
     } else if (elem.webkitRequestFullscreen) { /* Safari */
@@ -28,15 +31,20 @@ function openFullscreen() {
 }
 //Setting Box
 function displaySettings() {
+    document.getElementById('01_ogg').play();
     document.getElementById('settingBox').style.display = 'block';
 }
 //Restart
 function restartGameLala() {
+    document.getElementById('00_ogg').pause();
+    document.getElementById('01_ogg').play();
     document.getElementById('otherBtnGame').style.display = 'block';
     window.location.reload();
 }
 //Stop
 function stopGameLala() {
+    document.getElementById('00_ogg').pause();
+    document.getElementById('01_ogg').play();
     if (block.classList != "animateBlock") {
         totalSeconds = 0;
         clearInterval(timerletiable);
@@ -57,6 +65,8 @@ function stopGameLala() {
 }
 //Start
 function startGameLala() {
+    document.getElementById('00_ogg').play();
+    document.getElementById('01_ogg').play();
     char.src = 'gif/Char_Lala_M.gif';
     block.src = 'gif/Block_Dog.gif';
     char.style.display = 'block';
@@ -68,12 +78,25 @@ function startGameLala() {
     countUpTimer();
 }
 
+function soundOff() {
+    document.getElementById('00_ogg').muted = true;
+    document.getElementById('01_ogg').play();
+    document.getElementById('soundoff').innerText = 'Sound ON';
+}
+
+function soundOn() {
+    document.getElementById('00_ogg').muted = false;
+    document.getElementById('01_ogg').play();
+    document.getElementById('soundoff').innerText = 'Sound OFF';
+}
 
 function displaySettingsClose() {
+    document.getElementById('01_ogg').play();
     document.getElementById('settingBox').style.display = 'none';
 }
 //Jump
 function jump() {
+    document.getElementById('03_ogg').play();
     if (char.classList != "animate") {
         char.classList.add("animate");
     }
@@ -87,6 +110,8 @@ let checkDead = setInterval(function() {
     let charTop = parseInt(window.getComputedStyle(char).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     if (blockLeft < 20 && blockLeft > 0 && charTop >= 130) {
+        document.getElementById('00_ogg').pause();
+        document.getElementById('02_ogg').play();
         document.getElementById('otherBtnGame').style.display = 'none';
         totalSeconds = 0;
         clearInterval(timerletiable);
@@ -97,7 +122,7 @@ let checkDead = setInterval(function() {
         setTimeout(() => {
             game.style = 'background-image: url("gif/BK_Stop.gif")';
             document.getElementById('otherBtnGame').style.display = 'block';
-        }, 10000)
+        }, 3000)
     }
 }, 10);
 
@@ -134,6 +159,8 @@ let checkScour = setInterval(function() {
         block.classList.add("animateBlock6");
     };
     if (x == 100) {
+        document.getElementById('00_ogg').pause();
+        document.getElementById('04_ogg').play();
         totalSeconds = 0;
         clearInterval(timerletiable);
         block.style.display = 'none';
