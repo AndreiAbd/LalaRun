@@ -1,0 +1,177 @@
+@font-face {
+    font-family: fffCube;
+    src: url("fonts/BebasNeue-Regular.ttf");
+}
+
+body {
+    background-color: #555;
+}
+
+.settingBox {
+    z-index: 1;
+    position: fixed;
+    margin: -10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 49, 49, 0.77);
+    display: none;
+}
+
+.setBoxBody {
+    margin: auto;
+    text-align: center;
+    font-family: fffCube;
+    border: outset #fff 2px;
+    box-shadow: 0px 0px 20px #000;
+    background-color: #999;
+    border-radius: 5px;
+    padding: 20px;
+    width: 15%;
+    position: relative;
+    top: 20%;
+}
+
+.settingsBTN,
+.setBoxBody>button {
+    margin: 10px;
+    text-align: center;
+    background-color: #333;
+    border: outset 2px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.settingsBTN {
+    position: relative;
+    left: 30%;
+}
+
+.setBoxBody>span {
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+header {
+    text-align: center;
+}
+
+.game {
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    background-color: #fff;
+    border: outset #fff;
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 5px;
+    background-image: url("/gif/BK_Stop.gif");
+}
+
+.lifes {
+    position: relative;
+    left: 450px;
+    color: red;
+    width: 5%;
+    padding: 5px;
+    border: outset #000;
+    background-color: #000;
+    box-shadow: 0px 0px 5px red;
+}
+
+.char {
+    width: 20px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+    margin-left: 15px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    70% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    display: none;
+}
+
+.animateBlock1 {
+    animation: block 4s infinite linear;
+}
+
+.animateBlock2 {
+    animation: block 3.5s infinite linear;
+}
+
+.animateBlock3 {
+    animation: block 3s infinite linear;
+}
+
+.animateBlock4 {
+    animation: block 2.5s infinite linear;
+}
+
+.animateBlock5 {
+    animation: block 2s infinite linear;
+}
+
+.animateBlock6 {
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 480px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.score {
+    text-align: center;
+    font-family: fffCube;
+    font-size: 30px;
+    color: greenyellow;
+    background-color: #073307;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    border: outset 2px;
+    box-shadow: 0px 0px 5px #000;
+}
+
+footer {
+    text-align: center;
+}
+
+footer>a {
+    color: #fff;
+    font-family: fffCube;
+    text-shadow: 0px 0px 5px #000;
+    text-decoration: none;
+    font-size: large;
+}

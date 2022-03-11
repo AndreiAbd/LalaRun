@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()" accesskey="w">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lala Run | Start Game</title>
+</head>
+
+<body>
+    <div id="settingBox" class="settingBox">
+        <div id="setBoxBody" class="setBoxBody">
+            <span>OPTIONS</span>
+            <hr style="color: #000">
+            <button onclick="openFullscreen()" accesskey="F">Full Screen</button><br>
+            <button onclick="restartGameLala()" accesskey="r">Restart</button><br>
+            <button>Sound OFF</button>
+            <hr style="color: #000">
+            <button onclick="displaySettingsClose()">Resume</button>
+        </div>
+    </div>
+    <hr>
+    <header>
+        <img src="png/logo_font.png" alt="logo">
+    </header>
+    <div>
+        <button class="settingsBTN" onclick="displaySettings()" accesskey="s">&#9781; Settings</button>
+    </div>
+    <br>
+    <div id="game" class="game" style="background-image: url(gif/BK_Stop.gif);">
+        <img src="png/Char_Lala.png" alt="Lala" id="char" class="char">
+        <img src="png/Block_Dog.png" alt="Dog" id="block" class="block">
+    </div>
+    <div id="otherBtnGame">
+        <button class="settingsBTN" onclick="stopGameLala()" accesskey="q">Stop</button>
+        <button class="settingsBTN" onclick="startGameLala()" accesskey="e">Start</button>
+    </div>
+    <p id="score" class="score">Your Score: 0</p>
+    <hr>
+    <footer>
+        <a href="https://andreiabd.github.io/CoderX/" target="_blank">Powred by CoderX © <span id="addCurrentYear"></span></a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
