@@ -1,0 +1,81 @@
+<!--
+Powered : CoderX | Andrei Abd
+█▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
+█▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
+CODER X |تم تصميم الموقع و برمجته من قبل اندريه عبد
+mail      :  usr.g0a1@gmial.com
+Whatsapp  :  +963934820511
+Pinterest :  https://www.pinterest.com/andreiabd93/
+Instagram :  https://www.instagram.com/andrei_abd/
+Linkeden  :  https://www.linkedin.com/in/andreiabd
+Facebook  :  https://www.facebook.com/andreiaabd/
+Github    :  https://github.com/AndreiAbd
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="1800">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrei Abd - CoderX">
+    <meta name="keywords" content="Andrei Abd, CoderX, X, Coder">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="png/Block_Dog.png">
+    <title>Lala Run | Start Game</title>
+</head>
+
+<body style="background-image: url('gif/body_BK.gif');background-repeat: repeat;background-size: cover;">
+    <audio src="ogg/bk.ogg" id="00_ogg" loop></audio>
+    <audio src="ogg/click.ogg" id="01_ogg"></audio>
+    <audio src="ogg/game_over.ogg" id="02_ogg"></audio>
+    <audio src="ogg/jump.ogg" id="03_ogg"></audio>
+    <audio src="ogg/win.ogg" id="04_ogg"></audio>
+    <audio src="ogg/tok.ogg" id="05_ogg"></audio>
+    <audio src="ogg/bk_LALAGAME.ogg" id="06_ogg" autoplay></audio>
+    <div id="settingBox" class="settingBox">
+        <div id="setBoxBody" class="setBoxBody">
+            <span>OPTIONS</span>
+            <hr style="color: #fff">
+            <button onclick="openFullscreen()" accesskey="f">Full Screen</button><br>
+            <a href="https://www.facebook.com/andreiaabd" target="_blank">
+                <button accesskey="c">Contact</button><br>
+            </a>
+            <button onclick="restartGameLala()" accesskey="r">Restart</button><br>
+            <button id="soundoff" onclick="soundOff()" ondblclick="soundOn()">Sound OFF</button><br>
+            <hr style="color: #fff">
+            <button onclick="displaySettingsClose()">Resume</button>
+        </div>
+    </div>
+    <hr style="color: #fff;">
+    <header>
+        <img src="png/logo_font.png" alt="logo">
+    </header>
+    <div>
+        <button class="settingsBTN" onclick="displaySettings()" accesskey="s">&#9781; Settings</button>
+    </div>
+    <br>
+    <div id="game" class="game" style="background-image: url(gif/BK_Stop.gif);" accesskey="w" onclick="jump()">
+        <img src="png/Char_Lala.png" alt="Lala" id="char" class="char">
+        <img src="png/Block_Dog.png" alt="Dog" id="block" class="block">
+    </div>
+    <div id="otherBtnGame">
+        <button class="settingsBTN" onclick="stopGameLala()" accesskey="q">Stop</button>
+        <button class="settingsBTN" onclick="startGameLala()" accesskey="e">Start</button>
+    </div>
+    <p id="score" class="score">Your Score: 0</p>
+    <hr style="color: #fff;">
+    <footer>
+        <a href="https://andreiabd.github.io/CoderX/" target="_blank">Powred by CoderX © <span id="addCurrentYear"></span></a>
+    </footer>
+    <!--Loader Page-->
+    <div class="loader">
+        <div class="logo-loader">
+            <img src="gif/Loader_Char_Lala.gif">
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

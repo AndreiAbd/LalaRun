@@ -1,53 +1,107 @@
+<!--
+Powered | CoderX ©2021 | Andrei Abd
+█▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
+█▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
+CODER X |تم تصميم الموقع و برمجته من قبل اندريه عبد
+mail      :  usr.g0a1@gmial.com
+CoderX    :  https://coderx-project.blogspot.com/
+Whatsapp  :  +963934820511
+Pinterest :  https://www.pinterest.com/andreiabd93/
+Instagram :  https://www.instagram.com/andrei_abd/
+Linkeden  :  https://www.linkedin.com/in/andreiabd
+Facebook  :  https://www.facebook.com/andreiaabd/
+Github    :  https://github.com/AndreiAbd
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="png/00_icon_png.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Lala Run | Start Game</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Lala Run</title>
 </head>
 
 <body>
-    <audio src="ogg/bk.ogg" id="00_ogg"></audio>
-    <audio src="ogg/click.ogg" id="01_ogg"></audio>
-    <audio src="ogg/game_over.ogg" id="02_ogg"></audio>
-    <audio src="ogg/jump.ogg" id="03_ogg"></audio>
-    <audio src="ogg/win.ogg" id="04_ogg"></audio>
-    <div id="settingBox" class="settingBox">
-        <div id="setBoxBody" class="setBoxBody">
-            <span>OPTIONS</span>
-            <hr style="color: #000">
-            <button onclick="openFullscreen()" accesskey="f">Full Screen</button><br>
-            <button onclick="restartGameLala()" accesskey="r">Restart</button><br>
-            <button id="soundoff" onclick="soundOff()" ondblclick="soundOn()">Sound OFF</button><br>
-            <hr style="color: #000">
-            <button onclick="displaySettingsClose()">Resume</button>
+    <header>
+        <h1 title="Welcome Visitor!">
+            <strong>Lala Run</strong>
+        </h1>
+    </header>
+    <hr>
+    <main>
+        <div>
+            <section>
+                <header>
+                    <h3 title="Introduction">About Project:</h3>
+                    <p title="About Project" class="textMain">
+                        this simple Game project designed by <span>HTML</span> - <span>CSS</span>, And programing language <span>JavaScript.</span>
+                        <br> Just with simple click!, To turn the light ON or turn it OFF, And it's turned OFF automaticly after 10 sec.
+                    </p>
+                    <details class="sourcesDetails">
+                        <summary title="Click">Sources</summary>
+                        <p title="Source text">
+                            <span>We disable source list view on this project!</span><br>
+                            <hr> If you want to download all files feel free to click the link below and download all HTML, Styles, Scripts, and IMG, ICO folders.<br> We use Github site for any branch with any project by CoderX.
+                        </p>
+                        <a href="https://github.com/AndreiAbd/LalaRun/archive/refs/heads/main.zip" title="Download Source File">
+                            <button>Download Files</button>
+                        </a>
+                        <p title="hint">If you friendly user with git, use this code below and clone all repo files and folders:</p>
+                        <div class="codeSection">
+                            <span style="cursor: disable;">root $ ></span><code title="copy and past into terminal"> git clone https://github.com/AndreiAbd/LalaRun.git</code>
+                        </div>
+                    </details>
+                </header>
+                <hr>
+                <main class="M2">
+                    <div>
+                        <p>> Start Lala Game</p>
+                        <a href="StartGame.html">
+                            <button style="background-color: #333;color: #fff;border: 2px outset #fff;font-weight: bold;width: 30%;">Go</button>
+                        </a>
+                    </div>
+                </main>
+            </section>
+        </div>
+    </main>
+    <noscript>Sorry! your Browser dosen't support JavaScript!</noscript>
+    <hr>
+    <!--Loader Page-->
+    <div class="loader">
+        <div class="logo-loader">
+            <img src="png/00_icon_png.png" width="150px" height="150px" />
         </div>
     </div>
-    <hr>
-    <header>
-        <img src="png/logo_font.png" alt="logo">
-    </header>
-    <div>
-        <button class="settingsBTN" onclick="displaySettings()" accesskey="s">&#9781; Settings</button>
-    </div>
-    <br>
-    <div id="game" class="game" style="background-image: url(gif/BK_Stop.gif);" accesskey="w" onclick="jump()">
-        <img src="png/Char_Lala.png" alt="Lala" id="char" class="char">
-        <img src="png/Block_Dog.png" alt="Dog" id="block" class="block">
-    </div>
-    <div id="otherBtnGame">
-        <button class="settingsBTN" onclick="stopGameLala()" accesskey="q">Stop</button>
-        <button class="settingsBTN" onclick="startGameLala()" accesskey="e">Start</button>
-    </div>
-    <p id="score" class="score">Your Score: 0</p>
-    <hr>
     <footer>
-        <a href="https://andreiabd.github.io/CoderX/" target="_blank">Powred by CoderX © <span id="addCurrentYear"></span></a>
+        <ul title="Information">
+            <li>By Andrei Abd | CoderX ©1993 - <span id="getCurrentYear"></span></li>
+            <li>Contact:
+                <ul>
+                    <li>
+                        <Address>
+                            Written by <a href="mailto:usr.g0a1@gmail.com" title="Mail Us!">Andrei Abd | CoderX</a>.
+                        </Address>
+                    </li>
+                    <li>
+                        <Address>
+                            What's up & Telegram : +963934820511
+                        </Address>
+                    </li>
+                    <li>
+                        <Address>
+                            Visit us at: <a href="https://andreiabd.github.io/CoderX/index.html" title="Official Website!" target="_blank">https://andreiabd.github.io/CoderX/index.html</a>
+                        </Address>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+
 </body>
 
 </html>
