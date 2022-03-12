@@ -57,6 +57,16 @@ function restartGameLala() {
     document.getElementById('otherBtnGame').style.display = 'block';
     window.location.reload();
 }
+//Control
+function controlSettings() {
+    document.getElementById('01_ogg').play();
+    document.getElementById('ListControls').style.display = 'block';
+}
+
+function closeControlSettings() {
+    document.getElementById('01_ogg').play();
+    document.getElementById('ListControls').style.display = 'none';
+}
 //Stop
 function stopGameLala() {
     document.getElementById('00_ogg').pause();

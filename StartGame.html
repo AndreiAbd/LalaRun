@@ -34,6 +34,31 @@ Github    :  https://github.com/AndreiAbd
     <audio src="ogg/win.ogg" id="04_ogg"></audio>
     <audio src="ogg/tok.ogg" id="05_ogg"></audio>
     <audio src="ogg/bk_LALAGAME.ogg" id="06_ogg" autoplay></audio>
+    <div id="ListControls" class="ListControls">
+        <div id="controlSettingBody" class="controlSettingBody">
+            <hr style="color: #fff;">
+            <p>
+                <strong>> By Browser:</strong><br>
+                <strong> FireFox:</strong> alt + shift + accesskey.<br>
+                <strong> Chrome:</strong> shift + accesskey.<br>
+                <strong> Edge:</strong> shift + accesskey.<br>
+                <strong> Safari</strong> shift + accesskey.<br>
+                <br>
+                <strong>> Accesskey:</strong><br>
+                <strong> setteing</strong> [s].<br>
+                <strong> jump</strong> [w].<br>
+                <strong> fullscreen mode</strong> [f].<br>
+                <strong> restart</strong> [r].<br>
+                <strong> start</strong> [e].<br>
+                <strong> stop</strong> [q].<br>
+                <br>
+                <strong>> Touch Screen:</strong><br>
+                <strong> jump</strong> [tap on game screen to jump].<br>
+            </p>
+            <hr style="color: #fff;">
+            <button onclick="closeControlSettings()">close</button>
+        </div>
+    </div>
     <div id="settingBox" class="settingBox">
         <div id="setBoxBody" class="setBoxBody">
             <span>OPTIONS</span>
@@ -48,12 +73,13 @@ Github    :  https://github.com/AndreiAbd
             <button onclick="displaySettingsClose()">Resume</button>
         </div>
     </div>
-    <hr style="color: #fff;">
+    <br>
     <header>
         <img src="png/logo_font.png" alt="logo">
     </header>
     <div>
         <button class="settingsBTN" onclick="displaySettings()" accesskey="s">&#9781; Settings</button>
+        <button class="settingsBTN" onclick="controlSettings()" accesskey="v">&#9781; Controls</button>
     </div>
     <br>
     <div id="game" class="game" style="background-image: url(gif/BK_Stop.gif);" accesskey="w" onclick="jump()">
@@ -64,15 +90,16 @@ Github    :  https://github.com/AndreiAbd
         <button class="settingsBTN" onclick="stopGameLala()" accesskey="q">Stop</button>
         <button class="settingsBTN" onclick="startGameLala()" accesskey="e">Start</button>
     </div>
+
     <p id="score" class="score">Your Score: 0</p>
-    <hr style="color: #fff;">
+    <br>
     <footer>
         <a href="https://andreiabd.github.io/CoderX/" target="_blank">Powred by CoderX © <span id="addCurrentYear"></span></a>
     </footer>
     <!--Loader Page-->
     <div class="loader">
         <div class="logo-loader">
-            <img src="gif/Loader_Char_Lala.gif">
+            <img src="gif/Loader_Char_Lala.gif" width="40px" height="120px">
         </div>
     </div>
     <script src="js/script.js"></script>
