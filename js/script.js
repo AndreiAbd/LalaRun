@@ -29,6 +29,9 @@ function reload() {
     location.reload();
 }
 
+//BackGround Sound
+window.addEventListener("load", document.getElementById('06_ogg').play());
+
 // Get Current Year
 document.getElementById("addCurrentYear").innerHTML = d.getFullYear();
 

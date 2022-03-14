@@ -14,6 +14,8 @@ Github    :  https://github.com/AndreiAbd
 //Disable Right Mouse Click
 document.addEventListener('contextmenu', event => event.preventDefault());
 
+
+
 document.addEventListener("keydown", (e) => {
     // USE THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
     // if (e.ctrlKey || (e.keyCode>=112 && e.keyCode<=123)) {
